@@ -1,0 +1,327 @@
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #1a1a1a;
+  color: #f5f5f5;
+}
+
+header {
+  background-color: #2c2c2c;
+  padding: 1rem;
+}
+
+header h1 {
+  font-size: 1.5rem;
+}
+
+header nav {
+  margin-top: 0.5rem;
+  display: flex;
+}
+
+header nav a {
+  color: #f5f5f5;
+  text-decoration: none;
+  gap: 1rem;
+  flex: 1 0 auto;
+}
+
+.underline {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+}
+
+.underline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  height: 4px;
+  background: #a90ee2;
+  transition: width 0.3s ease-out;
+}
+
+.underline:hover::after {
+  width: 55%;
+}
+
+main {
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+main h2 {
+  font-size: 45px;
+  margin-bottom: 1rem;
+}
+main span {
+  font-size: 25px;
+  margin-bottom: 1rem;
+}
+main p {
+  margin-bottom: 1rem;
+}
+main button {
+  background-color: #232323;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 1rem;
+  display: flex;
+  height: auto;
+}
+
+main button:hover {
+  transform: translateY(-5px);
+  transition: transform 0.3s ease-out;
+}
+
+main button img {
+  width: 20px;
+  height: 20px;
+  margin-left: 0.5rem;
+}
+
+main button div.card-color {
+  color: #f1e7e7;
+  font-size: 25px;
+  height: auto;
+  width: 100%;
+  border-radius: 12px;
+}
+
+main button div.card-subjects {
+  background: #232323;
+  color: #8667ed;
+  height: auto;
+}
+
+main button div.blue {
+  background: linear-gradient(
+    to bottom right,
+    rgb(0, 0, 255),
+    rgb(0, 128, 255),
+    rgb(0, 255, 255)
+  );
+}
+
+button.color-green div.card-color {
+  background: linear-gradient(
+    to bottom right,
+    rgb(0, 255, 0),
+    rgb(0, 189, 0),
+    rgb(0, 255, 128)
+  );
+}
+
+button.color-yellow div.card-color {
+  background: linear-gradient(
+    to bottom right,
+    rgb(255, 255, 0),
+    rgb(128, 128, 0),
+    rgb(255, 255, 128)
+  );
+}
+
+button.color-red div.card-color {
+  background: linear-gradient(
+    to bottom right,
+    rgb(255, 0, 0),
+    rgb(128, 0, 0),
+    rgb(255, 128, 128)
+  );
+}
+
+button.color-black div.card-color {
+  background: linear-gradient(
+    to bottom right,
+    rgb(0, 0, 0),
+    rgb(64, 64, 64),
+    rgb(128, 128, 128)
+  );
+}
+
+button.color-red_white div.card-color {
+  background: linear-gradient(
+    to bottom right,
+    rgb(255, 0, 0),
+    rgb(164, 86, 86),
+    rgb(176, 176, 176)
+  );
+}
+
+button.color-green_blue div.card-color {
+  background: linear-gradient(
+    to bottom right,
+    rgb(0, 255, 0),
+    rgb(0, 128, 128),
+    rgb(72, 0, 255)
+  );
+}
+
+button.color-green_gold div.card-color {
+  background: linear-gradient(
+    to bottom right,
+    rgb(0, 255, 0),
+    rgb(151, 151, 1),
+    rgb(255, 215, 0)
+  );
+}
+
+button.color-purple div.card-color {
+  background: linear-gradient(
+    to bottom right,
+    rgb(128, 0, 128),
+    rgb(189, 64, 189),
+    rgb(255, 0, 255)
+  );
+}
+
+button.color-purple_white div.card-color {
+  background: linear-gradient(
+    to bottom right,
+    rgb(60, 10, 60),
+    rgb(135, 7, 135),
+    rgb(255, 255, 255)
+  );
+}
+
+button.color-de div.card-color {
+  background: linear-gradient(
+    to bottom right,
+    rgb(0, 0, 0),
+    rgb(255, 0, 0),
+    rgb(255, 230, 0)
+  );
+}
+
+button.color-es div.card-color {
+  background: linear-gradient(
+    to bottom right,
+    rgb(255, 0, 0),
+    rgba(225, 255, 0, 0.978),
+    rgb(255, 0, 0)
+  );
+}
+
+button.color_rainbow div.card-color {
+  background: linear-gradient(
+    to bottom right,
+    rgb(255, 0, 0),
+    rgb(255, 127, 0),
+    rgb(255, 255, 0),
+    rgb(0, 255, 0),
+    rgb(0, 0, 255),
+    rgb(75, 0, 130),
+    rgb(148, 0, 211)
+  );
+}
+
+.color-blue {
+  box-shadow:
+    0 4px 8px 0 rgb(14, 2, 95),
+    0 6px 20px 0 rgb(1, 1, 255);
+}
+.color-green {
+  box-shadow:
+    0 4px 8px 0 rgb(0, 144, 0),
+    0 6px 20px 0 rgb(0, 255, 0);
+}
+.color-yellow {
+  box-shadow:
+    0 4px 8px 0 rgba(255, 255, 0, 0.2),
+    0 6px 20px 0 rgba(255, 255, 0, 0.19);
+}
+.color-red {
+  box-shadow:
+    0 4px 8px 0 rgb(107, 0, 0),
+    0 6px 20px 0 rgb(255, 0, 0);
+}
+.color-black {
+  box-shadow:
+    0 4px 8px 0 rgba(255, 255, 255, 0.2),
+    0 6px 20px 0 rgba(249, 249, 249, 0.19);
+}
+
+.color-red_white {
+  box-shadow:
+    0 4px 8px 0 rgb(255, 0, 0),
+    0 4px 8px 0 rgb(164, 86, 86),
+    0 6px 20px 0 rgb(255, 255, 255);
+}
+
+.color-green_blue {
+  box-shadow:
+    0 4px 8px 0 rgb(0, 255, 0),
+    0 4px 8px 0 rgb(0, 128, 128),
+    0 6px 20px 0 rgb(0, 255, 255);
+}
+
+.color-green_gold {
+  box-shadow:
+    0 4px 8px 0 rgb(0, 255, 0),
+    0 4px 8px 0 rgb(151, 151, 1),
+    0 6px 20px 0 rgb(255, 215, 0);
+}
+
+.color-purple {
+  box-shadow:
+    0 4px 8px 0 rgb(128, 0, 128),
+    0 4px 8px 0 rgb(189, 64, 189),
+    0 6px 20px 0 rgb(255, 0, 255);
+}
+
+.color-purple_white {
+  box-shadow:
+    0 4px 8px 0 rgb(60, 10, 60),
+    0 4px 8px 0 rgb(135, 7, 135),
+    0 6px 20px 0 rgb(255, 255, 255);
+}
+
+.color-de {
+  box-shadow:
+    0 4px 8px 0 rgb(0, 0, 0),
+    0 4px 8px 0 rgb(255, 0, 0),
+    0 6px 20px 0 rgb(255, 230, 0);
+}
+
+.color-es {
+  box-shadow:
+    0 4px 8px 0 rgb(255, 0, 0),
+    0 4px 8px 0 rgba(225, 255, 0, 0.978),
+    0 6px 20px 0 rgb(255, 0, 0);
+}
+
+.color_rainbow {
+  box-shadow:
+    0 4px 8px 0 rgb(255, 0, 0),
+    0 4px 8px 0 rgb(255, 127, 0),
+    0 4px 8px 0 rgb(255, 255, 0),
+    0 4px 8px 0 rgb(0, 255, 0),
+    0 4px 8px 0 rgb(0, 0, 255),
+    0 4px 8px 0 rgb(75, 0, 130),
+    0 6px 20px 0 rgb(148, 0, 211);
+}
+
+main button div.card-subjects ul {
+  list-style: none;
+  padding: 0;
+  gap: 0.5rem;
+}
+
+footer {
+  background-color: #2c2c2c;
+  padding: 1rem;
+  text-align: center;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer h4 {
+  font-size: 0.9rem;
+}
